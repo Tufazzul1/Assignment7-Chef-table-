@@ -1,0 +1,57 @@
+[
+    {
+      "recipe_id": 1,
+      "recipe_name": "Grilled Salmon with Lemon",
+      "short_description": "A refreshing and healthy dish perfect for summer evenings.",
+      "ingredients": ["4 salmon fillets", "2 lemons", "Olive oil", "Salt", "Black pepper"],
+      "preparing_time": 20,
+      "calories": 250,
+      "recipe_image": "https://i.ibb.co/jHPnwt5/ca-creative-bp-PTl-XWTOvg-unsplash.jpg"
+    },
+    {
+      "recipe_id": 2,
+      "recipe_name": "Caprese Salad",
+      "short_description": "A classic Italian salad bursting with flavors of ripe tomatoes, fresh mozzarella, and basil.",
+      "ingredients": ["4 tomatoes", "1 ball of fresh mozzarella", "Fresh basil leaves", "Balsamic vinegar", "Extra virgin olive oil", "Salt", "Black pepper"],
+      "preparing_time": 15,
+      "calories": 180,
+      "recipe_image": "https://i.ibb.co/jHPnwt5/ca-creative-bp-PTl-XWTOvg-unsplash.jpg"
+    },
+    {
+      "recipe_id": 3,
+      "recipe_name": "Vegetable Stir-Fry",
+      "short_description": "A quick and nutritious stir-fry loaded with colorful vegetables.",
+      "ingredients": ["1 red bell pepper", "1 green bell pepper", "1 yellow bell pepper", "1 onion", "2 carrots", "1 cup broccoli florets", "3 cloves garlic", "Soy sauce", "Vegetable oil", "Sesame seeds"],
+      "preparing_time": 25,
+      "calories": 200,
+      "recipe_image": "https://i.ibb.co/jHPnwt5/ca-creative-bp-PTl-XWTOvg-unsplash.jpg"
+    },
+    {
+      "recipe_id": 4,
+      "recipe_name": "Spaghetti Carbonara",
+      "short_description": "A classic Roman pasta dish with creamy egg sauce, crispy pancetta, and Parmesan cheese.",
+      "ingredients": ["400g spaghetti", "150g pancetta or guanciale", "3 large eggs", "100g Parmesan cheese", "Black pepper", "Salt"],
+      "preparing_time": 30,
+      "calories": 350,
+      "recipe_image": "https://i.ibb.co/jHPnwt5/ca-creative-bp-PTl-XWTOvg-unsplash.jpg"
+    },
+    {
+      "recipe_id": 5,
+      "recipe_name": "Chicken Caesar Salad",
+      "short_description": "A hearty salad with grilled chicken, crunchy romaine lettuce, croutons, and tangy Caesar dressing.",
+      "ingredients": ["2 chicken breasts", "1 head romaine lettuce", "Croutons", "Parmesan cheese", "Caesar dressing"],
+      "preparing_time": 20,
+      "calories": 280,
+      "recipe_image": "https://i.ibb.co/jHPnwt5/ca-creative-bp-PTl-XWTOvg-unsplash.jpg"
+    },
+    {
+      "recipe_id": 6,
+      "recipe_name": "Homemade Pizza",
+      "short_description": "Make your own delicious pizza with your favorite toppings!",
+      "ingredients": ["Pizza dough", "Tomato sauce", "Mozzarella cheese", "Your choice of toppings (e.g., pepperoni, mushrooms, bell peppers, onions)"],
+      "preparing_time": 40,
+      "calories": 320,
+      "recipe_image": "https://i.ibb.co/jHPnwt5/ca-creative-bp-PTl-XWTOvg-unsplash.jpg"
+    }
+  ]
+  
