@@ -28,6 +28,7 @@ function App() {
   const handleCurrentCook = currCook => {
     const newCurrentCook = [...currentCooks, currCook]
     setCurrentCooks(newCurrentCook)
+    setCooks(cooks.filter(cook => cook.recipe_id !== currCook.recipe_id));
   }
 
   return (
