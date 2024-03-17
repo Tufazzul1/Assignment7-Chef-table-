@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, handleAddToCook }) => {
     const { recipe_name, recipe_image, short_description, ingredients, preparing_time, calories} = recipe;
     return (
         <div className='border-solid border-2 border-gray-300  rounded-xl p-3'>
@@ -24,14 +24,15 @@ const Recipe = ({ recipe }) => {
                 <h4><i className="fa-regular fa-clock mr-2"></i>{preparing_time} minutes</h4>
                 <h4><i className="fa-solid fa-fire mr-2"></i>{calories} calories</h4>
             </div>
-            <button className="btn btn-success mt-4">Want to Cook</button>
+            <button onClick={()=>handleAddToCook(recipe)} className="btn btn-success mt-4">Want to Cook</button>
 
         </div>
     );
 };
 
 Recipe.propTypes = {
-    recipe: PropTypes.object.isRequired
+    recipe: PropTypes.object.isRequired,
+    handleAddToCook: PropTypes.func.isRequired
 }
 
 export default Recipe;

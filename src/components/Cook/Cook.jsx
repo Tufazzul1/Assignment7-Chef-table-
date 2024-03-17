@@ -1,29 +1,35 @@
+import PropTypes from 'prop-types';
 
-
-const Cook = () => {
+const Cook = ({ cook }) => {
+    const { recipe_name, preparing_time, calories } = cook
     return (
-        <div className="mt-10 lg:w-1/3 border border-gray-300 rounded-lg">
-            <h1 className="text-3xl font-bold text-center pt-4 pb-4">Want to Cook</h1>
-            <hr />
 
-            <div className="overflow-x-auto">
+        
+        <div>
+             <div className="overflow-x-auto">
                 <table className="table">
-                    {/* head */}
                     <thead>
                         <tr>
                             <th></th>
                             <th>Name</th>
-                            <th>Job</th>
-                            <th>Favorite Color</th>
+                            <th>Time</th>
+                            <th>Calories</th>
                         </tr>
                     </thead>
-                    <tbody>
-                            
-                    </tbody>
+
                 </table>
+            </div>
+            <div className='p-4 m-4 bg-gray-100 rounded-lg flex gap-2 justify-between'>
+                <h3>{recipe_name}</h3>
+                <h4>{preparing_time} minutes</h4>
+                <p>{calories} calories</p>
+                <button className="btn btn-success rounded-full">Preparing</button>
             </div>
         </div>
     );
 };
+Cook.propTypes = {
+    cook: PropTypes.object.isRequired
+}
 
 export default Cook;
