@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Cook = ({ cook }) => {
+const Cook = ({ cook, handleCurrentCook }) => {
     const { recipe_name, preparing_time, calories,recipe_id } = cook
     return (
      
@@ -9,13 +9,14 @@ const Cook = ({ cook }) => {
                 <h3>{recipe_name}</h3>
                 <h4>{preparing_time} minutes</h4>
                 <p>{calories} calories</p>
-                <button className="btn btn-success rounded-full">Preparing</button>
+                <button onClick={()=>handleCurrentCook(cook)} className="btn btn-success rounded-full">Preparing</button>
             </div>
         
     );
 };
 Cook.propTypes = {
-    cook: PropTypes.object.isRequired
+    cook: PropTypes.object.isRequired,
+    handleCurrentCook: PropTypes.func.isRequired
 }
 
 export default Cook;

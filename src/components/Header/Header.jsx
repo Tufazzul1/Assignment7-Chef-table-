@@ -17,7 +17,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-3">
-                    <label className="input input-bordered flex items-center gap-2 rounded-full">
+                    <label className="sm: w-[100px]input input-bordered flex items-center gap-2 rounded-full">
                         <i className="fa-solid fa-magnifying-glass"></i>
                         
                         <input type="text" className="grow" placeholder="Search" />

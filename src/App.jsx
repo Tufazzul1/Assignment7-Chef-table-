@@ -16,6 +16,13 @@ function App() {
     setCooks(newRecipeList)
   }
 
+  const [currentCooks, setCurrentCooks] = useState([])
+
+  const handleCurrentCook = currCook => {
+      const newCurrentCook = [...currentCooks, currCook]
+      setCurrentCooks(newCurrentCook)
+  }
+
   return (
     <>
       <Header></Header>
@@ -23,7 +30,7 @@ function App() {
       <RecipeHeader></RecipeHeader>
       <div className='lg:flex container mx-auto gap-3'>
         <Recipes handleAddToCook={handleAddToCook}></Recipes>
-        <Cooks cooks={cooks}></Cooks>
+        <Cooks handleCurrentCook={handleCurrentCook} cooks={cooks} currentCooks={currentCooks}></Cooks>
       </div>
 
     </>
