@@ -18,7 +18,7 @@ const Recipes = ({handleAddToCook}) => {
 
 
     return (
-        <div className="mt-10 lg:w-[60%] container grid lg:grid-cols-2 gap-8 ">
+        <div className="mt-10 lg:w-[65%] container grid lg:grid-cols-2 gap-8 ">
             {
                 recipes.map(recipe =>
                      <Recipe key={recipe.recipe_id}
