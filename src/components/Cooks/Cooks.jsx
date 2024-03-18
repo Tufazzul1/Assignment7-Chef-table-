@@ -25,10 +25,11 @@ const Cooks = ({ cooks, handleCurrentCook, currentCooks }) => {
                 </table>
             </div>
             {
-                cooks.map(cook => <Cook
+                cooks.map((cook, index) => <Cook
                     key={cook.recipe_id}
                     cook={cook}
                     handleCurrentCook={handleCurrentCook}
+                    index={index + 1}
                 ></Cook>)
             }
                    <div>
@@ -47,9 +48,10 @@ const Cooks = ({ cooks, handleCurrentCook, currentCooks }) => {
                 </table>
             </div>
             {
-                currentCooks.map(cook =><CurrentCooks 
+                currentCooks.map((cook, index) =><CurrentCooks 
                      key={cook.recipe_id + 1} 
                      cook={cook}
+                     index={index + 1}
                      ></CurrentCooks>)
             }
            
